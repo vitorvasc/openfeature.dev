@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.defaultSidebar.category.Sections": {
+    "message": "Sections",
+    "description": "The label for category Sections in sidebar defaultSidebar"
+  },
+  "sidebar.defaultSidebar.category.Sections.link.generated-index.title": {
+    "message": "Specification Sections",
+    "description": "The generated-index page title for category Sections in sidebar defaultSidebar"
+  }
+}

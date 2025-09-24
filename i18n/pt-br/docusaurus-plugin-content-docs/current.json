@@ -1,0 +1,74 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Concepts": {
+    "message": "Concepts",
+    "description": "The label for category Concepts in sidebar docs"
+  },
+  "sidebar.docs.category.Concepts.link.generated-index.title": {
+    "message": "OpenFeature Concepts",
+    "description": "The generated-index page title for category Concepts in sidebar docs"
+  },
+  "sidebar.docs.category.Concepts.link.generated-index.description": {
+    "message": "OpenFeature seeks to provide a simple, consistent, and powerful API for developers to use feature flagging in their applications. To accomplish this, the OpenFeature SDK defines a number of flexible abstractions.",
+    "description": "The generated-index page description for category Concepts in sidebar docs"
+  },
+  "sidebar.docs.category.Technologies": {
+    "message": "Technologies",
+    "description": "The label for category Technologies in sidebar docs"
+  },
+  "sidebar.docs.category.Server": {
+    "message": "Server",
+    "description": "The label for category Server in sidebar docs"
+  },
+  "sidebar.docs.category.Node.js": {
+    "message": "Node.js",
+    "description": "The label for category Node.js in sidebar docs"
+  },
+  "sidebar.docs.category.Client": {
+    "message": "Client",
+    "description": "The label for category Client in sidebar docs"
+  },
+  "sidebar.docs.category.Web": {
+    "message": "Web",
+    "description": "The label for category Web in sidebar docs"
+  },
+  "sidebar.tutorials.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Getting Started.link.generated-index.title": {
+    "message": "Getting started with the OpenFeature SDK",
+    "description": "The generated-index page title for category Getting Started in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Getting Started.link.generated-index.description": {
+    "message": "These step-by-step guides walk you through the basics of the OpenFeature SDK for your preferred language.",
+    "description": "The generated-index page description for category Getting Started in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Java SDK": {
+    "message": "Java SDK",
+    "description": "The label for category Java SDK in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Java SDK.link.generated-index.title": {
+    "message": "Java SDK tutorials",
+    "description": "The generated-index page title for category Java SDK in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.Java SDK.link.generated-index.description": {
+    "message": "These step-by-step guides walk you through the basics of the OpenFeature SDK usage for Java.",
+    "description": "The generated-index page description for category Java SDK in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.OpenFeature Operator": {
+    "message": "OpenFeature Operator",
+    "description": "The label for category OpenFeature Operator in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.OpenFeature Operator.link.generated-index.title": {
+    "message": "OpenFeature Operator Tutorials",
+    "description": "The generated-index page title for category OpenFeature Operator in sidebar tutorials"
+  },
+  "sidebar.tutorials.category.OpenFeature Operator.link.generated-index.description": {
+    "message": "These step-by-step guides walk you through the basics of the OpenFeature SDK for your preferred language.",
+    "description": "The generated-index page description for category OpenFeature Operator in sidebar tutorials"
+  }
+}

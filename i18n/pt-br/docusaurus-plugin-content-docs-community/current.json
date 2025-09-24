@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.community.category.Charters": {
+    "message": "Charters",
+    "description": "The label for category Charters in sidebar community"
+  },
+  "sidebar.community.doc.Overview": {
+    "message": "Overview",
+    "description": "The label for the doc item Overview in sidebar community, linking to the doc README"
+  },
+  "sidebar.community.doc.Members": {
+    "message": "Members",
+    "description": "The label for the doc item Members in sidebar community, linking to the doc community-members"
+  },
+  "sidebar.community.doc.Adopters": {
+    "message": "Adopters",
+    "description": "The label for the doc item Adopters in sidebar community, linking to the doc ADOPTERS"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "link.title.Sections": {
+    "message": "Seções",
+    "description": "The title of the footer links column with title=Sections in the footer"
+  },
+  "link.title.Community": {
+    "message": "Comunidade",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "Mais",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Docs": {
+    "message": "Documentação",
+    "description": "The label of footer link with label=Docs linking to docs/reference/intro"
+  },
+  "link.item.label.Specification": {
+    "message": "Especificações",
+    "description": "The label of footer link with label=Specification linking to specification"
+  },
+  "link.item.label.Community": {
+    "message": "Comunidade",
+    "description": "The label of footer link with label=Community linking to community"
+  },
+  "link.item.label.Tutorials": {
+    "message": "Tutoriais",
+    "description": "The label of footer link with label=Tutorials linking to docs/tutorials/five-minutes-to-feature-flags"
+  },
+  "link.item.label.BlueSky": {
+    "message": "BlueSky",
+    "description": "The label of footer link with label=BlueSky linking to https://bsky.app/profile/openfeature.dev"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/openfeature"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/company/openfeature/"
+  },
+  "link.item.label.Join us on Slack": {
+    "message": "Junte-se ao Slack",
+    "description": "The label of footer link with label=Join us on Slack linking to https://cloud-native.slack.com/archives/C0344AANLA1"
+  },
+  "link.item.label.YouTube": {
+    "message": "YouTube",
+    "description": "The label of footer link with label=YouTube linking to https://www.youtube.com/@openfeature"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/open-feature"
+  },
+  "link.item.label.Trademarks": {
+    "message": "Uso de marcas registradas",
+    "description": "The label of footer link with label=Trademarks linking to https://www.linuxfoundation.org/legal/trademark-usage"
+  },
+  "copyright": {
+    "message": "© 2025 OpenFeature is a Cloud Native Computing Foundation incubating project | Documentation Distributed under CC BY 4.0 | All Rights Reserved",
+    "description": "The footer copyright"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "logo.alt": {
+    "message": "OpenFeature Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Docs": {
+    "message": "Docs",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Specification": {
+    "message": "Especificação",
+    "description": "Navbar item with label Specification"
+  },
+  "item.label.Ecosystem": {
+    "message": "Ecossistema",
+    "description": "Navbar item with label Ecosystem"
+  },
+  "item.label.Community": {
+    "message": "Comunidade",
+    "description": "Navbar item with label Community"
+  },
+  "item.label.Support & Training": {
+    "message": "Suporte & Treinamento",
+    "description": "Navbar item with label Support & Training"
+  },
+  "item.label.Tutorials": {
+    "message": "Tutoriais",
+    "description": "Navbar item with label Tutorials"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  }
+}
