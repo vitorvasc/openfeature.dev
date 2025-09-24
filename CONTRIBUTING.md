@@ -40,6 +40,9 @@ yarn start
 This command starts a local development server and opens up a browser window.
 Most changes are reflected live without having to restart the server.
 
+> [!NOTE]
+> If you are using a language other than English, you can run `yarn start -- --locale [language]` to start the server in the desired language.
+
 ### Local Development with Devbox
 
 To develop locally with [Devbox](https://www.jetify.com/devbox), Follow the steps below:

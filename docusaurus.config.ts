@@ -85,6 +85,10 @@ const themeConfig: ThemeCommonConfig & AlgoliaThemeConfig = {
       },
       { to: '/blog', label: 'Blog', position: 'left' },
       {
+        type: 'localeDropdown',
+        position: 'right',
+      },
+      {
         href: 'https://github.com/open-feature',
         position: 'right',
         className: 'header-github-link',
@@ -209,7 +213,12 @@ const config: Config = {
   onBrokenMarkdownLinks: 'warn',
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'pt-br'],
+    localeConfigs: {
+      'pt-br': {
+        htmlLang: 'pt-BR',
+      }
+    }
   },
   headTags: [
     {
