@@ -1,6 +1,7 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Link from '@docusaurus/Link';
+import { translate } from '@docusaurus/Translate';
 
 function HeroHome() {
   const { siteConfig } = useDocusaurusContext();
@@ -31,7 +32,11 @@ function HeroHome() {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              {siteConfig.tagline}
+              {translate({
+                message: siteConfig.tagline,
+                id: 'index.hero-home.tagline',
+                description: 'The tagline of the hero section',
+              })}
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center">
               <div data-aos="fade-up" data-aos-delay="400">
@@ -39,7 +44,11 @@ function HeroHome() {
                   className="btn text-white hover:text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0"
                   to="/docs/reference/intro"
                 >
-                  Learn more
+                  {translate({
+                    message: 'Learn more',
+                    id: 'index.hero-home.learnMore',
+                    description: 'The label for the learn more button',
+                  })}
                 </Link>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
@@ -47,7 +56,11 @@ function HeroHome() {
                   className="btn text-white hover:text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
                   to="/docs/tutorials/five-minutes-to-feature-flags"
                 >
-                  Get started
+                  {translate({
+                    message: 'Get started',
+                    id: 'index.hero-home.getStarted',
+                    description: 'The label for the get started button',
+                  })}
                 </Link>
               </div>
             </div>

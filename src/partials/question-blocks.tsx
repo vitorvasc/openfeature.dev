@@ -1,5 +1,6 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { translate } from '@docusaurus/Translate';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFlag, faClipboard } from '@fortawesome/free-regular-svg-icons';
 import { faUserGroup } from '@fortawesome/free-solid-svg-icons';

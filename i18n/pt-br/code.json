@@ -4,7 +4,7 @@
     "description": "The label for the learn more button"
   },
   "index.hero-home.getStarted": {
-    "message": "Primeiros Passos",
+    "message": "Primeiros passos",
     "description": "The label for the get started button"
   },
   "theme.colorToggle.ariaLabel": {
