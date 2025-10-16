@@ -1,7 +1,7 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Link from '@docusaurus/Link';
-import { translate } from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 
 function HeroHome() {
   const { siteConfig } = useDocusaurusContext();
@@ -14,7 +14,15 @@ function HeroHome() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             {/* Logo */}
-            <h1 className="flex justify-center h1 mb-2" data-aos="fade-up" aria-label="Open Feature">
+            <h1
+              className="flex justify-center h1 mb-2"
+              data-aos="fade-up"
+              aria-label={translate({
+                message: 'OpenFeature wordmark',
+                id: 'index.heroHome.logoAriaLabel',
+                description: 'Aria-label for the OpenFeature logotype in the hero section',
+              })}
+            >
               <svg
                 className="dark:fill-white fill-gray-700"
                 width="522"
@@ -44,11 +52,9 @@ function HeroHome() {
                   className="btn text-white hover:text-white bg-purple-600 hover:bg-purple-700 w-full mb-4 sm:w-auto sm:mb-0"
                   to="/docs/reference/intro"
                 >
-                  {translate({
-                    message: 'Learn more',
-                    id: 'index.hero-home.learnMore',
-                    description: 'The label for the learn more button',
-                  })}
+                  <Translate id="index.heroHome.learnMore" description="The label for the learn more button">
+                    Learn more
+                  </Translate>
                 </Link>
               </div>
               <div data-aos="fade-up" data-aos-delay="600">
@@ -56,11 +62,9 @@ function HeroHome() {
                   className="btn text-white hover:text-white bg-gray-700 hover:bg-gray-800 w-full sm:w-auto sm:ml-4"
                   to="/docs/tutorials/five-minutes-to-feature-flags"
                 >
-                  {translate({
-                    message: 'Get started',
-                    id: 'index.hero-home.getStarted',
-                    description: 'The label for the get started button',
-                  })}
+                  <Translate id="index.heroHome.getStarted" description="The label for the get started button">
+                    Get started
+                  </Translate>
                 </Link>
               </div>
             </div>

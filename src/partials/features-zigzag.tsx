@@ -1,6 +1,7 @@
 import React from 'react';
 import CheckboxIcon from './checkbox-icon';
 import Link from '@docusaurus/Link';
+import Translate, { translate } from '@docusaurus/Translate';
 
 /**
  * The code snippet was created on Carbon.now using the dracula pro theme.
@@ -92,13 +93,32 @@ function FeaturesZigZag() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <div className="inline-flex text-sm font-semibold py-1 px-3 m-2 text-green-600 bg-green-200 rounded-full mb-4">
-              Open source
+              <Translate
+                id="index.featuresZigZag.badgeLabel"
+                description="Label indicating OpenFeature is open source"
+              >
+                Open source
+              </Translate>
             </div>
-            <h1 className="h2 mb-4">Community driven feature flagging</h1>
+            <h1 className="h2 mb-4">
+              <Translate
+                id="index.featuresZigZag.heading"
+                description="Main heading for the community driven feature flagging section"
+              >
+                Community driven feature flagging
+              </Translate>
+            </h1>
             <p className="text-xl text-gray-500 dark:text-gray-300 mb-4">
-              OpenFeature is an open source CNCF incubating project under the Apache 2 license. Check out the project on{' '}
-              <Link to="https://github.com/open-feature">GitHub</Link> and consider joining the{' '}
-              <Link to="/community/">OpenFeature community!</Link>
+              <Translate
+                id="index.featuresZigZag.description"
+                description="Description about OpenFeature being an open source CNCF incubating project with links to GitHub and the community"
+                components={{
+                  githubLink: <Link to="https://github.com/open-feature" />,
+                  communityLink: <Link to="/community/" />,
+                }}
+              >
+                {'OpenFeature is an open source CNCF incubating project under the Apache 2 license. Check out the project on <githubLink>GitHub</githubLink> and consider joining the <communityLink>OpenFeature community!</communityLink>'}
+              </Translate>
             </p>
           </div>
           {/* Items */}
@@ -115,7 +135,11 @@ function FeaturesZigZag() {
                   src={CodeSnippet}
                   width="540"
                   height="405"
-                  alt="Features 01"
+                  alt={translate({
+                    message: 'Code snippet showing OpenFeature usage',
+                    id: 'index.featuresZigZag.sectionOne.imageAlt',
+                    description: 'Alt text for the OpenFeature code snippet image in the first feature block',
+                  })}
                 />
               </div>
               {/* Content */}
@@ -124,21 +148,57 @@ function FeaturesZigZag() {
                 data-aos="fade-right"
               >
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">Avoid code-level lock-in</div>
-                  <h3 className="h3 mb-3">One SDK, any backend</h3>
+                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">
+                    <Translate
+                      id="index.featuresZigZag.sectionOne.tagline"
+                      description="Tagline highlighting avoiding code-level lock-in"
+                    >
+                      Avoid code-level lock-in
+                    </Translate>
+                  </div>
+                  <h3 className="h3 mb-3">
+                    <Translate
+                      id="index.featuresZigZag.sectionOne.title"
+                      description="Title describing that OpenFeature uses one SDK for any backend"
+                    >
+                      One SDK, any backend
+                    </Translate>
+                  </h3>
                   <p className="text-xl text-gray-500 dark:text-gray-300 mb-4">
-                    OpenFeature is designed to work with any feature flag management tool or in-house solution. This
-                    enables you to switch between platforms or consolidate multiple platforms much more easily.
+                    <Translate
+                      id="index.featuresZigZag.sectionOne.description"
+                      description="Description explaining OpenFeature works with any feature flag tool"
+                    >
+                      OpenFeature is designed to work with any feature flag management tool or in-house solution. This enables you to switch between platforms or consolidate multiple platforms much more easily.
+                    </Translate>
                   </p>
                   <ul className="text-lg text-gray-500 dark:text-gray-300 -mb-2 pl-0">
                     <li className="flex items-center mb-2">
-                      <CheckboxIcon text="Continue to use your current solution" />
+                      <CheckboxIcon
+                        text={translate({
+                          message: 'Continue to use your current solution',
+                          id: 'index.featuresZigZag.sectionOne.bulletOne',
+                          description: 'Bullet point about continuing to use the current solution',
+                        })}
+                      />
                     </li>
                     <li className="flex items-center mb-2">
-                      <CheckboxIcon text="Combine multiple solutions behind a single interface" />
+                      <CheckboxIcon
+                        text={translate({
+                          message: 'Combine multiple solutions behind a single interface',
+                          id: 'index.featuresZigZag.sectionOne.bulletTwo',
+                          description: 'Bullet point about combining multiple solutions behind a single interface',
+                        })}
+                      />
                     </li>
                     <li className="flex items-center">
-                      <CheckboxIcon text="Try a new solution without a code refactor" />
+                      <CheckboxIcon
+                        text={translate({
+                          message: 'Try a new solution without a code refactor',
+                          id: 'index.featuresZigZag.sectionOne.bulletThree',
+                          description: 'Bullet point about trying a new solution without a code refactor',
+                        })}
+                      />
                     </li>
                   </ul>
                 </div>
@@ -169,22 +229,56 @@ function FeaturesZigZag() {
               >
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
                   <div className="font-architects-daughter text-xl text-purple-600 mb-2">
-                    Developed with the industry
+                    <Translate
+                      id="index.featuresZigZag.sectionTwo.tagline"
+                      description="Tagline about industry collaboration"
+                    >
+                      Developed with the industry
+                    </Translate>
                   </div>
-                  <h3 className="h3 mb-3">Supports your favorite tools</h3>
+                  <h3 className="h3 mb-3">
+                    <Translate
+                      id="index.featuresZigZag.sectionTwo.title"
+                      description="Title about supporting favorite tools"
+                    >
+                      Supports your favorite tools
+                    </Translate>
+                  </h3>
                   <p className="text-xl text-gray-500 dark:text-gray-300 mb-4">
-                    OpenFeature has broad industry support, and many of the top open source and commercial tools have
-                    created officially-supported providers.
+                    <Translate
+                      id="index.featuresZigZag.sectionTwo.description"
+                      description="Description about OpenFeature having broad industry support and providers"
+                    >
+                      OpenFeature has broad industry support, and many of the top open source and commercial tools have created officially-supported providers.
+                    </Translate>
                   </p>
                   <ul className="text-lg text-gray-500 dark:text-gray-300 -mb-2 pl-0">
                     <li className="flex items-center mb-2">
-                      <CheckboxIcon text="Works with your favorite vendor" />
+                      <CheckboxIcon
+                        text={translate({
+                          message: 'Works with your favorite vendor',
+                          id: 'index.featuresZigZag.sectionTwo.bulletOne',
+                          description: 'Bullet point about working with favorite vendors',
+                        })}
+                      />
                     </li>
                     <li className="flex items-center mb-2">
-                      <CheckboxIcon text="Integrates with popular open source projects" />
+                      <CheckboxIcon
+                        text={translate({
+                          message: 'Integrates with popular open source projects',
+                          id: 'index.featuresZigZag.sectionTwo.bulletTwo',
+                          description: 'Bullet point about integrating with popular open source projects',
+                        })}
+                      />
                     </li>
                     <li className="flex items-center">
-                      <CheckboxIcon text="Add support to your home grown solution" />
+                      <CheckboxIcon
+                        text={translate({
+                          message: 'Add support to your home grown solution',
+                          id: 'index.featuresZigZag.sectionTwo.bulletThree',
+                          description: 'Bullet point about adding support to a home grown solution',
+                        })}
+                      />
                     </li>
                   </ul>
                 </div>
@@ -215,10 +309,29 @@ function FeaturesZigZag() {
                 data-aos="fade-right"
               >
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">Ultimate flexibility</div>
-                  <h3 className="h3 mb-3">Speaks your language</h3>
+                  <div className="font-architects-daughter text-xl text-purple-600 mb-2">
+                    <Translate
+                      id="index.featuresZigZag.sectionThree.tagline"
+                      description="Tagline about flexibility"
+                    >
+                      Ultimate flexibility
+                    </Translate>
+                  </div>
+                  <h3 className="h3 mb-3">
+                    <Translate
+                      id="index.featuresZigZag.sectionThree.title"
+                      description="Title about supporting multiple programming languages"
+                    >
+                      Speaks your language
+                    </Translate>
+                  </h3>
                   <p className="text-xl text-gray-500 dark:text-gray-300 mb-4">
-                    OpenFeature supports many of the top programming languages, with more on the way.
+                    <Translate
+                      id="index.featuresZigZag.sectionThree.description"
+                      description="Description about OpenFeature supporting many programming languages"
+                    >
+                      OpenFeature supports many of the top programming languages, with more on the way.
+                    </Translate>
                   </p>
                 </div>
               </div>

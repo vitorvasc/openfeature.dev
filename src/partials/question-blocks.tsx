@@ -1,6 +1,6 @@
 import React from 'react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import { translate } from '@docusaurus/Translate';
+import Translate, { translate } from '@docusaurus/Translate';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFlag, faClipboard } from '@fortawesome/free-regular-svg-icons';
 import { faUserGroup } from '@fortawesome/free-solid-svg-icons';
@@ -28,10 +28,21 @@ function QuestionBlocks() {
                 <FontAwesomeIcon className="absolute top-5 left-6 text-purple-100 fa-xl" icon={faFlag} />
               </div>
 
-              <h4 className="h4 mb-2">What's a Feature Flag?</h4>
+              <h4 className="h4 mb-2">
+                <Translate
+                  id="index.questionBlocks.itemOne.title"
+                  description="Question asking what a feature flag is"
+                >
+                  What's a Feature Flag?
+                </Translate>
+              </h4>
               <p className="text-lg text-gray-500 dark:text-gray-300 text-center">
-                Feature flags are a software development technique that allows teams to enable, disable or change the
-                behavior of certain features or code paths in a product or service, without modifying the source code.
+                <Translate
+                  id="index.questionBlocks.itemOne.description"
+                  description="Description explaining what feature flags are"
+                >
+                  Feature flags are a software development technique that allows teams to enable, disable or change the behavior of certain features or code paths in a product or service, without modifying the source code.
+                </Translate>
               </p>
             </div>
 
@@ -44,7 +55,14 @@ function QuestionBlocks() {
               <div className="w-16 h-16 mb-4 rounded-full bg-purple-600 relative">
                 <FontAwesomeIcon className="absolute top-5 left-[18px] text-purple-100 fa-xl" icon={faUserGroup} />
               </div>
-              <h4 className="h4 mb-2">What's OpenFeature?</h4>
+              <h4 className="h4 mb-2">
+                <Translate
+                  id="index.questionBlocks.itemTwo.title"
+                  description="Question asking what OpenFeature is"
+                >
+                  What's OpenFeature?
+                </Translate>
+              </h4>
               <p className="text-lg text-gray-500 dark:text-gray-300 text-center">
                 {siteConfig.customFields.description as string}
               </p>
@@ -60,11 +78,21 @@ function QuestionBlocks() {
               <div className="w-16 h-16 mb-4 rounded-full bg-purple-600 relative">
                 <FontAwesomeIcon className="absolute top-5 left-6 text-purple-100 fa-xl" icon={faClipboard} />
               </div>
-              <h4 className="h4 mb-2">Why standardize?</h4>
+              <h4 className="h4 mb-2">
+                <Translate
+                  id="index.questionBlocks.itemThree.title"
+                  description="Question asking why feature flagging should be standardized"
+                >
+                  Why standardize?
+                </Translate>
+              </h4>
               <p className="text-lg text-gray-500 dark:text-gray-300 text-center">
-                Standardizing feature flags unifies tools and vendors behind a common interface, avoiding vendor lock-in
-                at the code level. It provides a framework for building extensions and integrations that can be shared
-                across the community.
+                <Translate
+                  id="index.questionBlocks.itemThree.description"
+                  description="Description explaining the benefits of standardizing feature flags"
+                >
+                  Standardizing feature flags unifies tools and vendors behind a common interface, avoiding vendor lock-in at the code level. It provides a framework for building extensions and integrations that can be shared across the community.
+                </Translate>
               </p>
             </div>
           </div>
